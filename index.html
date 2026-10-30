@@ -22,11 +22,15 @@
                 </div>
 
                 <!-- Menu Nav -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-xs text-gray-700 hover:text-indigo-600 font-medium transition">Beranda</a>
-                    <a href="#" class="text-xs text-gray-700 hover:text-indigo-600 font-medium transition">Project</a>
-                    <a href="#" class="text-xs text-gray-700 hover:text-indigo-600 font-medium transition">Tentang</a>
-                    <a href="#" class="text-xs text-gray-700 hover:text-indigo-600 font-medium transition">Kontak</a>
+                <div class="hidden md:flex space-x-2">
+                    <a href="#"
+                        class="text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2 rounded-lg transition-all duration-200">Home</a>
+                    <a href="#games"
+                        class="text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2 rounded-lg transition-all duration-200">Games</a>
+                    <a href="#about"
+                        class="text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2 rounded-lg transition-all duration-200">About</a>
+                    <a href="#contact"
+                        class="text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2 rounded-lg transition-all duration-200">Contact</a>
                 </div>
 
                 <!-- Login -->
@@ -36,7 +40,8 @@
 
                 <!-- Humberger -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                    <button id="mobile-menu-btn"
+                        class="text-zinc-700 hover:text-amber-600 focus:outline-none p-2 rounded-lg hover:bg-amber-50 transition">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16"></path>
@@ -44,6 +49,17 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 font-pixel px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#"
+                class="mobile-link block text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2.5 rounded-lg transition-all duration-200">Home</a>
+            <a href="#games"
+                class="mobile-link block text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2.5 rounded-lg transition-all duration-200">Games</a>
+            <a href="#about"
+                class="mobile-link block text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2.5 rounded-lg transition-all duration-200">About</a>
+            <a href="#contact"
+                class="mobile-link block text-xs text-zinc-700 hover:bg-amber-600 hover:text-white font-medium px-4 py-2.5 rounded-lg transition-all duration-200">Contact</a>
         </div>
     </nav>
 
@@ -57,54 +73,93 @@
                 ReswaraDev
             </h1>
             <p class="text-xs text-gray-200 text-lg md:text-xl mb-8">
-                Selamat data di website ini.
+                Welcome to This Website
             </p>
             <a href="#"
-                class="bg-indigo-600 hover:bg-indigo-700 text-xs text-white font-medium px-6 py-3 rounded-xl transition">
-                Coba Sekarang
+                class="bg-zinc-800 hover:bg-zinc-600 text-xs text-white font-medium px-6 py-3 rounded-xl transition">
+                Try Now
             </a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="py-20 px-4 bg-[#944b10] text-gray-800">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <!-- Section About 1 -->
+    <!-- <section id="about" class="py-20 px-4 bg-[#944b10] text-white">
+        <div class="max-w-4xl mx-auto">
+            <div data-aos="fade-up" class="bg-zinc-900 border-2 border-zinc-700 rounded-2xl p-6 md:p-10 shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
 
-            <div data-aos="fade-up">
-                <span class="text-indigo-600 font-pixel text-xs tracking-wider uppercase">Tentang ReswaraDev</span>
-                <h2 class="font-pixel text-xl md:text-md font-bold mt-2 mb-4">
-                    Eksplorasi Dunia Kode & Game Development
-                </h2>
-                <p class="font-pixel text-xs text-gray-600 leading-relaxed mb-6">
-                    ReswaraDev adalah ruang digital tempatku meracik barisan kode, membangun proyek web interaktif, dan
-                    mengembangkan game indie pixel art. Fokus pada kesederhanaan, performa, dan kreativitas tanpa batas.
-                </p>
-                <a href="#"
-                    class="inline-block bg-gray-900 hover:bg-indigo-600 text-white text-xs px-6 py-3 rounded-xl transition font-pixel">
-                    Kenalan Lebih Jauh &rarr;
-                </a>
+                    Kiri
+                    <div class="md:col-span-4 flex justify-center">
+                        <div
+                            class="w-36 h-36 md:w-44 md:h-44 bg-zinc-950 border-2 border-amber-500 rounded-xl overflow-hidden shadow-inner flex items-center justify-center group">
+                            <img src="assets/images/foto-profil.png" alt="ReswaraDev Profile"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                    </div>
+
+                    Kanan
+                    <div class="md:col-span-8 text-center md:text-left">
+                        <span class="text-amber-500 text-xs tracking-wider uppercase">// ABOUT RESWARADEV</span>
+                        <h2 class="font-pixel text-xl md:text-2xl font-bold mt-2 mb-3 text-zinc-100">
+                            Starting My Journey in Game Development
+                        </h2>
+                        <p class="text-xs text-zinc-400 leading-relaxed mb-6">
+                            ReswaraDev is my personal digital space and development log as an indie game developer in
+                            training.
+                            It all started out of pure curiosity back in Minecraft, where I discovered Command Blocks
+                            and began
+                            experimenting with building simple mini-games inside them. From that fascination with game
+                            logic
+                            within pixelated blocks, my curiosity grew into a passion to learn game development from
+                            scratch.
+                            This portfolio is purely built to document every step of my learning process, experiments,
+                            and small
+                            milestones along this creative journey.
+                        </p>
+                        <a href="#"
+                            class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 text-xs px-5 py-2.5 rounded-lg transition font-bold shadow">
+                            Get to Know More &rarr;
+                        </a>
+                    </div>
+
+                </div>
             </div>
 
+        </div>
+    </section> -->
 
-            <div class="font-pixel grid grid-cols-2 gap-4">
-                <div data-aos="fade-up"
-                    class="p-6 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition">
-                    <div class="text-indigo-600 font-bold text-lg mb-2 font-pixel">01</div>
-                    <h3 class="font-bold text-gray-900 mb-1">Web Dev</h3>
-                    <p class="text-xs text-gray-500">Membangun website modern responsif dengan Tailwind & PHP.</p>
-                </div>
-                <div data-aos="fade-up"
-                    class="p-6 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition">
-                    <div class="text-indigo-600 font-bold text-lg mb-2 font-pixel">02</div>
-                    <h3 class="font-bold text-gray-900 mb-1">Indie Games</h3>
-                    <p class="text-xs text-gray-500">Merancang game 2D pixel art seru menggunakan Godot Engine.</p>
+    <!-- About Section 2 -->
+    <section id="about" class="py-20 px-4 bg-[#944b10] text-white">
+        <div class="max-w-4xl mx-auto">
+            <div data-aos="fade-up"
+                class="bg-zinc-900 border-2 border-zinc-700 rounded-2xl p-8 md:p-12 shadow-2xl text-center">
+
+                <span class="font-pixel text-amber-500 text-xs tracking-wider uppercase">// ABOUT RESWARADEV //</span>
+                <h2 class="font-pixel text-xl font-bold mt-2 mb-4 text-zinc-100">
+                    Starting My Journey in Game Development
+                </h2>
+
+                <p class="text-xs text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-8">
+                    ReswaraDev is my personal digital space and development log as an indie game developer in training.
+                    It all started out of pure curiosity back in Minecraft, where I discovered Command Blocks and began
+                    experimenting with building simple mini-games inside them. From that fascination with game logic
+                    within pixelated blocks, my curiosity grew into a passion to learn game development from scratch.
+                    This portfolio is purely built to document every step of my learning process, experiments, and small
+                    milestones along this creative journey.
+                </p>
+
+                <div class="flex justify-center gap-4">
+                    <a href="#"
+                        class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 text-xs px-6 py-3 rounded-lg transition font-bold shadow">
+                        Get to Know More &rarr;
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section Game -->
-    <section class="relative bg-zinc-900 text-white py-40 lg:py-48 px-4 overflow-hidden">
+    <section id="games" class="relative bg-zinc-900 text-white py-40 lg:py-48 px-4 overflow-hidden">
         <div class="absolute top-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
             <img src="assets/images/cave-top.svg" alt="Cave Top Border"
                 class="w-full h-auto max-h-32 lg:max-h-48 object-cover block">
@@ -114,12 +169,13 @@
 
             <!-- Judul Section -->
             <div data-aos="fade-up" data-aos-delay="0" class="text-center mb-16">
-                <span class="text-amber-500 font-pixel text-xs tracking-wider uppercase">// PORTFOLIO GAME</span>
+                <span class="text-amber-500 font-pixel text-xs tracking-wider uppercase">// GAMES //</span>
                 <h2 class="font-pixel text-xl md:text-3xl font-bold mt-3 text-zinc-100">
-                    Koleksi Game & Proyek
+                    My Indie Games & Projects
                 </h2>
                 <p class="text-zinc-400 text-sm md:text-base mt-3">
-                    Beberapa game pixel art dan eksperimen kode yang pernah kubuat.
+                    A collection of pixel art games and code experiments as I learn and build my path in game
+                    development.
                 </p>
             </div>
 
@@ -128,129 +184,56 @@
                 <!-- Card -->
                 <div data-aos="fade-up" data-aos-delay="200"
                     class="bg-zinc-800 border-2 border-zinc-700 rounded-xl overflow-hidden shadow-lg hover:border-amber-500 transition group">
-                    <div class="h-48 bg-zinc-950 flex items-center justify-center border-b-2 border-zinc-700">
-                        <span class="font-pixel text-xs text-zinc-500">Thumbnail Game 1</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-pixel text-sm font-bold text-amber-400 mb-2">Nostalgic Arcade</h3>
-                        <p class="text-zinc-400 text-xs md:text-sm leading-relaxed mb-4">
-                            Mini-game koleksi arcade bergaya retro pixel art yang dibuat menggunakan Godot Engine.
-                        </p>
-                        <a href="#"
-                            class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 font-pixel text-xs px-4 py-2 rounded transition font-bold">
-                            Mainkan &rarr;
-                        </a>
-                    </div>
-                </div>
 
-                <div data-aos="fade-up" data-aos-delay="400"
-                    class="bg-zinc-800 border-2 border-zinc-700 rounded-xl overflow-hidden shadow-lg hover:border-amber-500 transition group">
                     <div class="h-48 bg-zinc-950 flex items-center justify-center border-b-2 border-zinc-700">
-                        <span class="font-pixel text-xs text-zinc-500">Thumbnail Game 1</span>
+                        <img src="assets/images/HardcoreQuizzGames_Thumbnail.png" alt="Hardcore Game Quizz Thumbnail"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <!-- <span class="font-pixel text-xs text-zinc-500">Thumbnail Game 1</span> -->
                     </div>
-                    <div class="p-6">
-                        <h3 class="font-pixel text-sm font-bold text-amber-400 mb-2">Nostalgic Arcade</h3>
-                        <p class="text-zinc-400 text-xs md:text-sm leading-relaxed mb-4">
-                            Mini-game koleksi arcade bergaya retro pixel art yang dibuat menggunakan Godot Engine.
-                        </p>
-                        <a href="#"
-                            class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 font-pixel text-xs px-4 py-2 rounded transition font-bold">
-                            Mainkan &rarr;
-                        </a>
-                    </div>
-                </div>
 
-                <div data-aos="fade-up" data-aos-delay="600"
-                    class="bg-zinc-800 border-2 border-zinc-700 rounded-xl overflow-hidden shadow-lg hover:border-amber-500 transition group">
-                    <div class="h-48 bg-zinc-950 flex items-center justify-center border-b-2 border-zinc-700">
-                        <span class="font-pixel text-xs text-zinc-500">Thumbnail Game 1</span>
-                    </div>
                     <div class="p-6">
-                        <h3 class="font-pixel text-sm font-bold text-amber-400 mb-2">Nostalgic Arcade</h3>
+                        <h3 class="font-pixel text-sm font-bold text-amber-400 mb-2">Hardcore Game Quizz</h3>
                         <p class="text-zinc-400 text-xs md:text-sm leading-relaxed mb-4">
-                            Mini-game koleksi arcade bergaya retro pixel art yang dibuat menggunakan Godot Engine.
+                            My very first web-based game built using HTML, CSS, and JavaScript, featuring an interactive
+                            challenge for gamers.
                         </p>
-                        <a href="#"
-                            class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 font-pixel text-xs px-4 py-2 rounded transition font-bold">
-                            Mainkan &rarr;
-                        </a>
-                    </div>
-                </div>
 
-                <div data-aos="fade-up" data-aos-delay="200"
-                    class="bg-zinc-800 border-2 border-zinc-700 rounded-xl overflow-hidden shadow-lg hover:border-amber-500 transition group">
-                    <div class="h-48 bg-zinc-950 flex items-center justify-center border-b-2 border-zinc-700">
-                        <span class="font-pixel text-xs text-zinc-500">Thumbnail Game 1</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-pixel text-sm font-bold text-amber-400 mb-2">Nostalgic Arcade</h3>
-                        <p class="text-zinc-400 text-xs md:text-sm leading-relaxed mb-4">
-                            Mini-game koleksi arcade bergaya retro pixel art yang dibuat menggunakan Godot Engine.
-                        </p>
-                        <a href="#"
-                            class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 font-pixel text-xs px-4 py-2 rounded transition font-bold">
-                            Mainkan &rarr;
-                        </a>
-                    </div>
-                </div>
+                        <div class="flex items-center justify-between pt-2 border-t border-zinc-700/50">
+                            <a href="https://restra23.github.io/Hardcore-Game-Quizz/" target="_blank"
+                                class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 font-pixel text-xs px-4 py-2 rounded transition font-bold">
+                                Play &rarr;
+                            </a>
 
-                <div data-aos="fade-up" data-aos-delay="400"
-                    class="bg-zinc-800 border-2 border-zinc-700 rounded-xl overflow-hidden shadow-lg hover:border-amber-500 transition group">
-                    <div class="h-48 bg-zinc-950 flex items-center justify-center border-b-2 border-zinc-700">
-                        <span class="font-pixel text-xs text-zinc-500">Thumbnail Game 1</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-pixel text-sm font-bold text-amber-400 mb-2">Nostalgic Arcade</h3>
-                        <p class="text-zinc-400 text-xs md:text-sm leading-relaxed mb-4">
-                            Mini-game koleksi arcade bergaya retro pixel art yang dibuat menggunakan Godot Engine.
-                        </p>
-                        <a href="#"
-                            class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 font-pixel text-xs px-4 py-2 rounded transition font-bold">
-                            Mainkan &rarr;
-                        </a>
-                    </div>
-                </div>
+                            <div class="flex items-center gap-2 text-zinc-400">
+                                <img src="assets/images/web.svg" alt="Web Browser"
+                                    class="w-4 h-4 opacity-75 hover:opacity-100 transition" title="Web / HTML5">
+                            </div>
 
-                <div data-aos="fade-up" data-aos-delay="600"
-                    class="bg-zinc-800 border-2 border-zinc-700 rounded-xl overflow-hidden shadow-lg hover:border-amber-500 transition group">
-                    <div class="h-48 bg-zinc-950 flex items-center justify-center border-b-2 border-zinc-700">
-                        <span class="font-pixel text-xs text-zinc-500">Thumbnail Game 1</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-pixel text-sm font-bold text-amber-400 mb-2">Nostalgic Arcade</h3>
-                        <p class="text-zinc-400 text-xs md:text-sm leading-relaxed mb-4">
-                            Mini-game koleksi arcade bergaya retro pixel art yang dibuat menggunakan Godot Engine.
-                        </p>
-                        <a href="#"
-                            class="inline-block bg-amber-600 hover:bg-amber-500 text-zinc-950 font-pixel text-xs px-4 py-2 rounded transition font-bold">
-                            Mainkan &rarr;
-                        </a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
         </div>
-
-        <!-- Gambar Tanah Tajam di Bagian Bawah -->
         <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
             <img src="assets/images/cave-bottom.svg" alt="Cave Bottom Border"
                 class="w-full h-auto max-h-32 lg:max-h-48 object-cover block">
         </div>
     </section>
 
-    <!-- Contact Me Section -->
-    <section class="relative bg-[#944b10] text-white py-24 px-4">
+    <!-- Section Contact -->
+    <section id="contact" class="relative bg-[#944b10] text-white py-24 px-4">
         <div class="max-w-4xl mx-auto text-center">
 
-            <!-- Judul Section -->
-            <span class="text-amber-200 font-pixel text-xs tracking-wider uppercase">// HUBUNGI SAYA</span>
-            <h2 class="font-pixel text-2xl md:text-4xl font-bold mt-2 mb-4 text-white">
-                Mari Terhubung!
+            <span data-aos="fade-up" class="text-amber-200 font-pixel text-xs tracking-wider uppercase">// CONTACT
+                //</span>
+            <h2 data-aos="fade-up" data-aos-delay="0" class="font-pixel text-3xs font-bold mt-2 mb-4 text-white">
+                Follow the Journey & Contact Us
             </h2>
-            <p class="font-pixel text-xs md:text-sm text-amber-100/90 max-w-xl mx-auto mb-12 leading-relaxed">
-                Punya ide proyek, mau diskusi game development, atau sekadar ingin menyapa? Kamu bisa temukan aku di
-                media sosial berikut:
+            <p data-aos="fade-up" data-aos-delay="0"
+                class="font-pixel text-xs text-amber-100/90 max-w-xl mx-auto mb-12 leading-relaxed">
+                Follow our story from beginning to end.
             </p>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 font-pixel">
@@ -306,27 +289,24 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-zinc-950 text-zinc-400 py-10 px-4 border-t border-zinc-800 font-pixel">
+    <!-- Section Footer -->
+    <footer data-aos="fade-up" data-aos-delay="0" class="bg-zinc-950 text-zinc-400 py-10 px-4 border-t border-zinc-800 font-pixel">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
 
-            <!-- Brand & Tagline Singkat -->
             <div class="text-center md:text-left">
                 <span class="text-amber-500 font-bold text-sm tracking-wide">ReswaraDev</span>
                 <p class="text-[10px] text-zinc-500 mt-1">
-                    Indie Game Developer & Web Enthusiast.
+                    Building an indie game dev journey from scratch.
                 </p>
             </div>
 
-            <!-- Navigasi Cepat (Pintasan) -->
             <div class="flex flex-wrap justify-center gap-6 text-xs">
-                <a href="#" class="hover:text-amber-400 transition">Beranda</a>
-                <a href="#about" class="hover:text-amber-400 transition">Tentang</a>
-                <a href="#projects" class="hover:text-amber-400 transition">Proyek</a>
-                <a href="#contact" class="hover:text-amber-400 transition">Kontak</a>
+                <a href="#" class="hover:text-amber-400 transition">Home</a>
+                <a href="#about" class="hover:text-amber-400 transition">About</a>
+                <a href="#projects" class="hover:text-amber-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
             </div>
 
-            <!-- Hak Cipta -->
             <div class="text-center md:text-right text-[10px] text-zinc-500">
                 <p>&copy; 2026 ReswaraDev. All rights reserved.</p>
             </div>
@@ -335,12 +315,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1500,
-            // once: true,
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </body>
